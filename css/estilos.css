@@ -1,0 +1,52 @@
+*,*::after *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* esta propiedad es compatible con safari */
+    -webkit-box-sizing: border-box;
+    /* esta propiedad es compatible con mozilla firefox */
+    -moz-box-sizing: border-box;
+}
+/* Aca van los estilos de la carga */
+#contenedor_carga{
+    background-color: rgba(250, 240, 245, 0.9);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+#carga{
+    border: 15px solid #ccc;
+    border-top-color: red;
+    border-top-style: groove;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    animation: cargagira 1.5s linear infinite;
+    -webkit-animation: cargagira 1.5s linear infinite;
+    -o-animation: cargagira 1.5s linear infinite;
+}
+
+@keyframes cargagira{
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+/* Aca voy a hacer los estilos de la bandera de Colombia */
+.amarillo{
+    height: 15em;
+}
+.azul{
+    height: 10em;
+}
+.rojo{
+    height: 8em;
+}
